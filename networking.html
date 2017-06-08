@@ -2,72 +2,12 @@
 <html>
 <head>
 	<title>networking</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<style type="text/css">
-		.jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 0;
-  background-color: #fff;
-  background-image: url('https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAN-AAAAJDQ0MWM3N2JmLTc2MGYtNDQxZS04ZmJjLTcyYzMyNTgxYjk5MA.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-}
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-  background: rgba(0,0,0,0.7);
-  padding: 2rem;
-  color: white;
-}
-
-.jumbotron p {
-    color: white;
-  }
-  .answers li { 
-list-style: upper-alpha; 
-} 
-
-label { 
-margin-left: 0.5em; 
-cursor: pointer; 
-} 
-
-#results { 
-background: #dddada; 
-color: 000000; 
-padding: 3px; 
-text-align: center; 
-width: 200px; 
-cursor: pointer; 
-border: 1px solid gray; 
-}
-
-#results:hover { 
-background: #3d91b8; 
-color: #ffffff; 
-padding: 3px; 
-text-align: center; 
-width: 200px; 
-cursor: pointer; 
-border: 1px solid gray; 
-} 
-
-#categorylist { 
-margin-top: 6px; 
-display: none; 
-} 
-
-#category1, #category2, #category3, #category4, #category5, #category6{ 
-display: none; 
-}
-
-    
-	</style>
+   <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/finalproject.css">
 	
 
 </head>
@@ -112,55 +52,155 @@ display: none;
   <div class="container">
       <div class="row">
       <div class="col-md-12">
-        <p>Add your content here</p>
+      <h1>What is use to connects network?</h1>
+      <p> In a network, a hub is the key device that connects every workstation or other network device together. Unlike a switch or router a hub has no way to send data across each connection but they can detect basic error in the network such as collision. Furthermore, the role of a switch is to control the signal flow. What this mean is that it can allow connection to be open or close. A router is one of the main hardware device to use the network. It was bulit to recive and analyze and move data to the correct network.</p>
+        <h1> Network Topologies</h1>
+        <p>A network topology is a structure of a network which can be arrange into physical and logical. we will focus on the most common one down below.</p>
+        
+        <h4>Bus Topology</h4>
+     <img src="https://www.tutorialspoint.com/data_communication_computer_network/images/bus_topology.jpg" alt="bus_topology" style="width:400px;height:228px;">
+     <P> To start off with the most basic, bus network topology. In this network all computer are connected to a single main cable in a linear style called bus. Then, the connection is work like a bus station, stopping at each computer one by one.</P>
+     
+     <h5>Pros</h5>
+<ul>
+  <li>Only runs good if network are small.</li>
+  <li>One of the easiest network topology to connect all workstation in a linear style.</li>
+  <li>Require less cable than other network topology.</li>
+</ul>
+<h5>Cons</h5>
+<ul>
+  <li>Its hard to find the error if the whole network shuts down.</li>
+  <li>If the main cable is damage, the whole network will fall apart.</li>
+  <li>Increase the amount of workstation will slow down the network.</li>
+</ul>
+
+<h4>Star Topology</h4>
+<img src="https://www.tutorialspoint.com/data_communication_computer_network/images/star_topology.jpg" alt="star_topology" style="width:350px;height:228px;">
+<p>Next is the star topology, in this topology, as the name suggest the network is connect in a geometry of a star. Every device is connect to a central network device (Hub,Switch and Computer) which represent as a server and the device itself as a client.</p> 
+
+<h5>Pros</h5>
+<ul>
+  <li>Another computer can be easily add to the network.</li>
+  <li>Even if one of the workstation fail, the other network still runs on.</li>
+  <li>Management of the network can be manage through central computer hub and switch.</li>
+</ul>
+<h5>Cons</h5>
+<ul>
+  <li>Its expensive especially when using a switch or router as the central network device.</li>
+  <li>The number of device that the network can handle depends one the the central network device.</li>
+  <li>If the main computer such as hub, switch or computer goes down, the whole network goes down with it.</li>
+</ul>  
+
+<h4>Ring Topology</h4>
+<img src="https://www.tutorialspoint.com/data_communication_computer_network/images/ring_topology.jpg" alt="Ring_topology" style="width:350px;height:227px;">
+<p>The Ring topology or ring network is a network structure that is connected in a circular manner. The data is sent around the ring until it reach its destination. This type of structure is commonly use in place such as schools and offices.</p> 
+<h5>Pros</h5>
+<ul>
+  <li>Data move in one direction which prevent data collision.</li>
+  <li>Network server is not require to control connection between workstation.</li>
+  <li>New workstation can be increase without sacrificing performance.</li>
+</ul>
+<h5>Cons</h5>
+<ul>
+  <li>If one workstation goes down, the whole network will also be effected.</li>
+  <li>Its expensive.</li>
+  <li>Because the data must be pass through other workstation in circle, it can be slower than other topology.</li>
+</ul>
+
+<h4>Mesh topology</h4>
+<img src="https://www.tutorialspoint.com/data_communication_computer_network/images/mesh_topology.jpg" alt="mesh_topology" style="width:350px;height:227px;">
+<p> In a mesh topology, all workstation and network device is connected with one another, allowing the transmissions to be broadcast to the fullest even if one of the connect shuts down. This topology is most common use in wireless networks.</p>
+<h5>Pros</h5>
+<ul>
+  <li>It can handle a large amount of loads because many device can transmit the data simultaneously.</li>
+  <li>If one device goes down the broadcasting of data still runs on.</li>
+  <li>Incresing device does not interrupt data broadcasting between other device.</li>
+</ul>
+<h5>Cons</h5>
+<ul>
+  <li>One of the most expensive network structure.</li>
+  <li>This topology cause a lot of time to built and maintain.</li> 
+</ul>
+
+<h4>Tree topology</h4>
+<img src="https://www.tutorialspoint.com/data_communication_computer_network/images/tree_topology.jpg" alt="tree_topology" style="width:370px;height:237px;">
+<p> A tree topology, like the name suggest again is a special structure which many element are arrange in branches. In this network structure there are one connection between two data. This is due to two data have only one mutual connection, which form a Hierarchica database.</p>
+<h5>Pros</h5>
+<ul>
+  <li>If one of the hierarchical network goes down, it doesn not effect other network.</li>
+  <li>Its easy to identify the problem and fix it.</li>
+</ul>
+<h5>Cons</h5>
+<ul>
+  <li>Large proportion of cable are needed</li>
+  <li>Lots of maintenance is required</li>
+</ul>
+
+<h4>Hybrid topology</h4>
+<img src="https://www.tutorialspoint.com/data_communication_computer_network/images/hybrid_topology.jpg" alt="hybrid_topology" style="width:370px;height:250px;">
+<p>Finally, the hybrid topology is made up out of two or more other network topologies. This included bus topology, mesh topology, ring topology, star topology, and tree topology.</p>
+<h5>Pros</h5>
+<ul>
+  <li>Its easy to dectect and isolate the error without affecting the the funtion of the rest of the network.</li>
+  <li>Its easy to increase the size of the network without damaging the structure.</li>
+  <li>Since its a combination of two or more topologies, you can design it to counter the weakness of the network topology.</li>
+</ul>
+<h5>Cons</h5>
+<ul>
+  <li>Since it is made out of two or more network topologies, its very expensive.</li>
+  <li>Its not easy to design this type of structure.</li>
+  <li>The hub that connect two topologies together are not the same as a normal and are expensive.</li>
+</ul>
       </div>
       </div>
-         <div class="row">
+        <div class="row">
       <div class="col-md-12">
-<p class="question">1. What is the answer to this question?</p>        
+      <h3>Test Yourself!</h3>
+<p>Take the quiz to see what you've learn</p>
+<p class="question">1. What is the name of topology that is structure in a circular geometry?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>          
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>            
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>            
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>       
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Ring Topology</label><br/>          
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Tree Topology</label><br/>            
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Star Topology</label><br/>            
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Bus Topology</label><br/>       
 </ul>        
 
 
-<p class="question">2. What is the answer to this question?</p>        
+<p class="question">2. What is the adventage of a Bus topology?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Answer 1</label><br/>           
-<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Answer 2</label><br/>            
-<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Answer 3</label><br/>           
-<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Answer 4</label><br/>       
+<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Can handle large amount of data load</label><br/>           
+<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Doesn't require much cable</label><br/>            
+<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Data runs in one direction preventing data collision</label><br/>           
+<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Increasing workstation will not affect performance</label><br/>       
 </ul>        
 
-<p class="question">3. What is the answer to this question?</p>        
+<p class="question">3. What does a switch do?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Answer 1</label><br/>            
-<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Answer 2</label><br/>            
-<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Answer 3</label><br/>           
-<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Answer 4</label><br/>       
+<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Connect device together</label><br/>            
+<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Analyze and move the data</label><br/>            
+<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Control the signal flow</label><br/>           
+<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Detect basic network error</label><br/>       
 </ul>        
 
-<p class="question">4. What is the answer to this question?</p>        
+<p class="question">4. Which Topologies is commonly use in schools and offices?</p>        
 
 <ul class="answers">           
-<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Answer 1</label><br/>            
-<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Answer 2</label><br/>            
-<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Answer 3</label><br/>            
-<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Answer 4</label><br/>        
+<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Star Topology</label><br/>            
+<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Mesh Topology</label><br/>            
+<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Bus Topology</label><br/>            
+<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Ring Topology</label><br/>        
 </ul>        
 
-<p class="question">5. What is the answer to this question?</p>        
+<p class="question">5. What is the disadventage of a Mesh topology?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Answer 1</label><br/>            
-<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Answer 2</label><br/>            
-<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Answer 3</label><br/>           
-<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Answer 4</label><br/>        
+<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Waste alot of time to built and maintain</label><br/>            
+<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Can't handle too much load</label><br/>            
+<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">If one station does down, the whole network falls apart</label><br/>           
+<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Cheap as candy</label><br/>        
 </ul>        
      
 
@@ -176,37 +216,38 @@ Show me the answers!
  <br/> 
 <div id="category1">            
 <p>              
-<strong>Question 1:</strong> The correct answer is <strong>Answer 1</strong>.</p>        
+<strong>Question 1:</strong> The correct answer is <strong>Ring Topology</strong>.</p>        
 </div>        
 
 <div id="category2">            
 <p>              
-<strong>Question 2:</strong> The correct answer is <strong>Answer 2</strong>.</p>        
+<strong>Question 2:</strong> The correct answer is <strong>Doesn't require much cable</strong>.</p>        
 </div>        
 
 <div id="category3">            
 <p>                
-<strong>Question 3:</strong> The correct answer is <strong>Answer 3</strong>.</p>        
+<strong>Question 3:</strong> The correct answer is <strong>Control the signal flow</strong>.</p>        
 </div>        
 
 <div id="category4">            
 <p>               
-<strong>Question 4:</strong> The correct answer is <strong>Answer 4</strong>.</p>        
+<strong>Question 4:</strong> The correct answer is <strong>Ring Topology</strong>.</p>        
 </div>        
 
 <div id="category5">            
 <p>                
-<strong>Question 5:</strong> The correct answer is <strong>Answer 1</strong>.</p>        
+<strong>Question 5:</strong> The correct answer is <strong>Waste alot of time to built and maintain</strong>.</p>        
 </div>        
 
 <div id="category6">            
 <p>                
-You answered them all right!</p>        
+You answered them all correctly!</p>        
 </div>
 
       </div>
       </div>
   </div>
+
 
       <hr>
 
@@ -219,7 +260,7 @@ You answered them all right!</p>
       <div class="col-md-4">
       </div>
       <div class="col-md-4" ">
-        <p><b>Team members :</b> Raviporn Saetiew, Pakbhumi Boonkrob, Kanghui Liang</p>
+        <p><b>Team members :</b> Raviporn Saetiew, Pakbhumi Boonkrob, Kanghui Liang, Kan Narayaem</p>
       </div>
       </div>
       </div>
@@ -232,4 +273,4 @@ You answered them all right!</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script type="text/javascript" src="jsq/jquery.js"></script>
-<script type="text/javascript" src="jsq/quiz-1.js"></script>
+<script type="text/javascript" src="jsq/quiz-2.js"></script>

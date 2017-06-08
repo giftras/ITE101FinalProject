@@ -2,73 +2,12 @@
 <html>
 <head>
 	<title>database</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<style type="text/css">
-		.jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 0;
-  background-color: #fff;
-  background-image: url('https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAN-AAAAJDQ0MWM3N2JmLTc2MGYtNDQxZS04ZmJjLTcyYzMyNTgxYjk5MA.jpg');
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
-}
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-  background: rgba(0,0,0,0.7);
-  padding: 2rem;
-  color: white;
-}
-
-.jumbotron p {
-    color: white;
-  }
-  .answers li { 
-list-style: upper-alpha; 
-} 
-
-label { 
-margin-left: 0.5em; 
-cursor: pointer; 
-} 
-
-#results { 
-background: #dddada; 
-color: 000000; 
-padding: 3px; 
-text-align: center; 
-width: 200px; 
-cursor: pointer; 
-border: 1px solid gray; 
-}
-
-#results:hover { 
-background: #3d91b8; 
-color: #ffffff; 
-padding: 3px; 
-text-align: center; 
-width: 200px; 
-cursor: pointer; 
-border: 1px solid gray; 
-} 
-
-#categorylist { 
-margin-top: 6px; 
-display: none; 
-} 
-
-#category1, #category2, #category3, #category4, #category5, #category6{ 
-display: none; 
-}
-
-    
-	</style>
-	
+   <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/finalproject.css">
 
 </head>
 <body>
@@ -112,55 +51,88 @@ display: none;
   <div class="container">
       <div class="row">
       <div class="col-md-12">
-        <p>Add your content here</p>
+       <h3>Database</h3>
+        <hr/>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp A database is an organized collection of data. It is the collection of schemas, tables, queries, reports, views, and other objects. The data are typically organized to model aspects of reality in a way that supports processes requiring information, such as modelling the availability of rooms in hotels in a way that supports finding a hotel with vacancies.</p>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp A database management system (DBMS) is a computer software application that interacts with the user, other applications, and the database itself to capture and analyze data. A general-purpose DBMS is designed to allow the definition, creation, querying, update, and administration of databases. Well-known DBMSs include MySQL, PostgreSQL, MongoDB, MariaDB, Microsoft SQL Server, Oracle, Sybase, SAP HANA, MemSQL and IBM DB2. A database is not generally portable across different DBMSs, but different DBMS can interoperate by using standards such as SQL and ODBC or JDBC to allow a single application to work with more than one DBMS. Database management systems are often classified according to the database model that they support; the most popular database systems since the 1980s have all supported the relational model as represented by the SQL language. Sometimes a DBMS is loosely referred to as a "database".</p>
+        <h3>Database Model</h3>
+        <hr/>
+        <p>&nbsp&nbsp&nbsp&nbsp&nbsp A database model determines the information a database will contain and how it will be used and how the items in the database relate to one another.</p>
+        <p><b>Hierarchical Database</b></p>
+        <ul>
+          <li>Fields or records are arranged in related groups resembling a family tree</li>
+          <li>Oldest and simplest; used in mainframes in 1970s</li>
+          <li>Is rigid in structure and difficult to update</li>
+        </ul>
+        <center><img src="http://www.centerprise.ca/wp-content/uploads/2015/07/Hierarchical21.png"  style="width:380px; height: 380px;"></center>
+        <br/>
+      <p><b>Network Database</b></p>
+      <ul>
+          <li>Fields or records are arranged in related groups resembling a family tree</li>
+          <li>Oldest and simplest; used in mainframes in 1970s</li>
+          <li>Is rigid in structure and difficult to update</li>
+        </ul>
+        <center><img src="http://pabipedia.wdfiles.com/local--files/network-database-model/320px-Network_Model.jpg"  style="width:380px; height: 380px;"></center>
+        <br/>
+      <p><b>Relational Database</b></p>
+      <ul>
+          <li>grew out of the hierarchical and network database models</li>
+          <li>Relates or connects data in different files through the use of primary keys, or common data elements</li>
+          <li>Data stored in tables (relations, or files) of rows (tuples, or records) and columns (attributes, or fields)</li>
+          <li>More flexible than previous models; built with SQL</li>
+          <li>Users don’t need to know data structure to use the database</li>
+        </ul>
+        <center><img src="https://cdn.tutsplus.com/net/authors/lalith-polepeddi/relational-databases-for-dummies-fig4.png"  style="width:380px; height: 380px;"></center>
       </div>
       </div>
          <div class="row">
       <div class="col-md-12">
-<p class="question">1. What is the answer to this question?</p>        
+      <h3>Test Yourself!</h3>
+<p>Take the quiz to see what you've learn</p>
+<p class="question">1. What is the database?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>          
-<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>            
-<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>            
-<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>       
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">base of data</label><br/>          
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">an organized collection of data</label><br/>            
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">information</label><br/>            
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">storage</label><br/>       
 </ul>        
 
 
-<p class="question">2. What is the answer to this question?</p>        
+<p class="question">2. How many type of database?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Answer 1</label><br/>           
-<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">Answer 2</label><br/>            
-<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Answer 3</label><br/>           
-<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Answer 4</label><br/>       
+<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">1</label><br/>           
+<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">2</label><br/>            
+<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">3</label><br/>           
+<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">4</label><br/>       
 </ul>        
 
-<p class="question">3. What is the answer to this question?</p>        
+<p class="question">3. Which one is not the type of database?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Answer 1</label><br/>            
-<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Answer 2</label><br/>            
-<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Answer 3</label><br/>           
-<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Answer 4</label><br/>       
+<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Database Model</label><br/>            
+<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">Hierarchical Database</label><br/>            
+<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Network Database</label><br/>           
+<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Relational Database</label><br/>       
 </ul>        
 
-<p class="question">4. What is the answer to this question?</p>        
+<p class="question">4. Why relational database is better than other type of database?</p>        
 
 <ul class="answers">           
-<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Answer 1</label><br/>            
-<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Answer 2</label><br/>            
-<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Answer 3</label><br/>            
-<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Answer 4</label><br/>        
+<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">More flexible than previous models</label><br/>            
+<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">Users don’t need to know data structure to use the database</label><br/>            
+<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Relates or connects data in different files</label><br/>            
+<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">All of above</label><br/>        
 </ul>        
 
-<p class="question">5. What is the answer to this question?</p>        
+<p class="question">5. What is the database management system?</p>        
 
 <ul class="answers">            
-<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Answer 1</label><br/>            
-<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Answer 2</label><br/>            
-<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Answer 3</label><br/>           
-<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Answer 4</label><br/>        
+<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">system that has database</label><br/>            
+<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">managing program</label><br/>            
+<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">a computer software application that interacts with the user, other applications, and the database itself to capture and analyze data</label><br/>           
+<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">none of above</label><br/>        
 </ul>        
      
 
@@ -176,27 +148,27 @@ Show me the answers!
  <br/> 
 <div id="category1">            
 <p>              
-<strong>Question 1:</strong> The correct answer is <strong>Answer 1</strong>.</p>        
+<strong>Question 1:</strong> The correct answer is <strong>an organized collection of data</strong>.</p>        
 </div>        
 
 <div id="category2">            
 <p>              
-<strong>Question 2:</strong> The correct answer is <strong>Answer 2</strong>.</p>        
+<strong>Question 2:</strong> The correct answer is <strong>3</strong>.</p>        
 </div>        
 
 <div id="category3">            
 <p>                
-<strong>Question 3:</strong> The correct answer is <strong>Answer 3</strong>.</p>        
+<strong>Question 3:</strong> The correct answer is <strong>Database Model</strong>.</p>        
 </div>        
 
 <div id="category4">            
 <p>               
-<strong>Question 4:</strong> The correct answer is <strong>Answer 4</strong>.</p>        
+<strong>Question 4:</strong> The correct answer is <strong>All of above</strong>.</p>        
 </div>        
 
 <div id="category5">            
 <p>                
-<strong>Question 5:</strong> The correct answer is <strong>Answer 1</strong>.</p>        
+<strong>Question 5:</strong> The correct answer is <strong>a computer software application that interacts with the user, other applications, and the database itself to capture and analyze data</strong>.</p>        
 </div>        
 
 <div id="category6">            
@@ -219,7 +191,7 @@ You answered them all right!</p>
       <div class="col-md-4">
       </div>
       <div class="col-md-4" ">
-        <p><b>Team members :</b> Raviporn Saetiew, Pakbhumi Boonkrob, Kanghui Liang</p>
+        <p><b>Team members :</b> Raviporn Saetiew, Pakbhumi Boonkrob, Kanghui Liang, Kan Narayaem</p>
       </div>
       </div>
       </div>
@@ -232,4 +204,4 @@ You answered them all right!</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script type="text/javascript" src="jsq/jquery.js"></script>
-<script type="text/javascript" src="jsq/quiz-1.js"></script>
+<script type="text/javascript" src="jsq/quiz-4.js"></script>

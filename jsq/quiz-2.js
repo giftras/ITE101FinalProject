@@ -17,16 +17,16 @@ var cat2name = "2";
 var cat3name = "3";            
 var cat4name = "4";            
 var cat5name = "5";                       
-var cat6name = "none";            
+var cat6name = "None";            
             
 
-var cat1 = ($("input[@name=q1]:checked").val() != "b"); 
+var cat1 = ($("input[@name=q1]:checked").val() != "a"); 
            
-var cat2 = ($("input[@name=q2]:checked").val() != "c");  
+var cat2 = ($("input[@name=q2]:checked").val() != "b");  
 
-var cat3 = ($("input[@name=q3]:checked").val() != "d");  
+var cat3 = ($("input[@name=q3]:checked").val() != "c");  
 
-var cat4 = ($("input[@name=q4]:checked").val() != "c");  
+var cat4 = ($("input[@name=q4]:checked").val() != "d");  
 
 var cat5 = ($("input[@name=q5]:checked").val() != "a"); 
 
